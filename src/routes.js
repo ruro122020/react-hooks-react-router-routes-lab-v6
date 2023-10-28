@@ -1,17 +1,31 @@
-
-
+import Actors from './pages/Actors'
+import Directors from './pages/Directors'
+import Home from './pages/Home'
+import Movie from './pages/Movie'
+import ErrorPage from './pages/ErrorPage'
 const routes = [
    {
-    route:'/',
+    path:'/',
+    element: <Home />,
+        errorElement: <ErrorPage />
+
    },
    {
-    route:'/directors',
+    path:'/directors',
+    element: <Directors />,
+    errorElement: <ErrorPage />
+
    },
    {
-    route:'/actors'
+    path:'/actors',
+    element: <Actors />,
+    errorElement: <ErrorPage />
+
    },
    {
-    route:'/movie/:id'
+    path:'/movie/:id',
+    element: <Movie />,
+    errorElement: <ErrorPage />
    }
   ];
 
