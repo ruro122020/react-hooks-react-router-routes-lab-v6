@@ -11,15 +11,18 @@ const routes = [
    },
    {
     path:'/directors',
-    element: <Directors />
+    element: <Directors />,
+    errorElement: <ErrorPage />
    },
    {
     path:'/actors',
-    element: <Actors />
+    element: <Actors />,
+    errorElement: <ErrorPage />
    },
    {
     path:'/movie/:id',
-    element: <Movie />
+    element: <Movie />,
+    errorElement: <ErrorPage />
    }
   ];
 
