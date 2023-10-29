@@ -14,14 +14,24 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "mocha": "^8.2.1"
+    "mocha": "^8.2.1",
+    "npm-watch": "^0.11.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "server": "json-server --watch db.json --port 4000",
     "test": "echo \".results.json\" && react-scripts test --reporters=@learn-co-curriculum/jest-learn-reporter --reporters=default --watchAll",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dev": "npm-watch"
+  },
+  "watch": {
+    "build": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": "js,jsx"
+    }
   },
   "eslintConfig": {
     "extends": [
