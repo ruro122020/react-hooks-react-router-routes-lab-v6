@@ -14,6 +14,7 @@ function Directors() {
   },[])
 
  if(!directors.length) return <h1>Loading...</h1>
+
 const displayDirectors = directors.map(director =>{
    return (
     <article key={director.id}>
@@ -24,6 +25,7 @@ const displayDirectors = directors.map(director =>{
     </article>
    )
   })
+
   return (
     <>
       <header>
@@ -31,8 +33,8 @@ const displayDirectors = directors.map(director =>{
         <NavBar />
       </header>
       <main>
-        {/* Director info here! */}
         <h1>Directors Page</h1>
+        {/* Director info here! */}
         {displayDirectors}
       </main>
     </>
