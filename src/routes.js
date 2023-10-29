@@ -7,8 +7,7 @@ const routes = [
    {
     path:'/',
     element: <Home />,
-        errorElement: <ErrorPage />
-
+    errorElement: <ErrorPage />
    },
    {
     path:'/directors',
